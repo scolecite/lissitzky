@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Красным Клином Бей Белых</title>
+</head>
+
+<!--
+Legend for Class Name and Clutter Shape Taxonomy:
+All clutter shape classes are different and thus I had to develop 
+a pattern to differentiate between them effectively. The pattern is:
+[color]+[shape]+[alphabetic numeration]
+ex. w + rect + a = white rectangle A 
+
+Shapes:
+rect = rectangle
+cir = circle
+tgl = triangle
+
+Colors:
+w = white
+r = red
+g = gray
+b = black
+
+Sometimes, direction is used to differentiate between shapes.
+
+Direction:
+lft = left
+mid = middle
+rgt = right
+-->
+
+<body>
+    <div class="container">
+        <div class="focus">
+            <div class="u-absolute focus__triangle"></div>
+            <div class="u-absolute focus__circle"></div>
+            <div class="u-absolute focus__square--lg"></div>
+            <div class="u-absolute focus__square--sm"></div>
+        </div>
+        <div class="txt">
+            <div class="u-absolute txt txt__klinom">клином</div>
+            <div class="u-absolute txt txt__krasnym">красным</div>
+            <div class="u-absolute txt txt__bei">бей</div>
+            <div class="u-absolute txt txt__belykh">белых</div>
+        </div>
+
+        <div class="clutter">
+            <div class="clutter__top">
+                <div class="clutter__top--wrect">
+                    <div class="u-absolute clutter__top--wrecta"></div>
+                    <div class="u-absolute clutter__top--wrectb"></div>
+                    <div class="u-absolute clutter__top--wrectc"></div>
+                    <div class="u-absolute clutter__top--wrectd"></div>
+                    <div class="u-absolute clutter__top--wrecte"></div>
+                    <div class="u-absolute clutter__top--wrectf"></div>
+                </div>
+                <div class="clutter__top--cross">
+                    <div class="u-absolute clutter__top--cross-bar"></div>
+                    <div class="u-absolute clutter__top--cross-lft"></div>
+                    <div class="u-absolute clutter__top--cross-mid"></div>
+                    <div class="u-absolute clutter__top--cross-rgt"></div>
+                </div>
+                <div class="clutter__top--slant">
+                    <div class="u-absolute clutter__top--slant-red"></div>
+                    <div class="u-absolute clutter__top--slant-white"></div>
+                    <div class="u-absolute clutter__top--slant-gray"></div>
+                </div>
+            </div>
+            <div class="clutter__mid">
+                <div class="u-absolute clutter__mid--wcir"></div>
+                <div class="u-absolute clutter__mid--rtgla"></div>
+                <div class="u-absolute clutter__mid--rtglb"></div>
+                <div class="u-absolute clutter__mid--brect"></div>
+            </div>
+            <div class="clutter__btm">
+                <div class="u-absolute clutter__btm--wrect">
+                    <div class="u-absolute clutter__btm--wrecta"></div>
+                    <div class="u-absolute clutter__btm--wrectb"></div>
+                </div>
+                <div class="u-absolute clutter__btm--rtgl"></div>
+                <div class="u-absolute clutter__btm--btgl"></div>
+                <div class="u-absolute clutter__btm--rrect">
+                    <div class="u-absolute clutter__btm--rrecta"></div>
+                    <div class="u-absolute clutter__btm--wbrecta"></div>
+                    <div class="u-absolute clutter__btm--rrectb"></div>
+                    <div class="u-absolute clutter__btm--rrectc"></div>
+                    <div class="u-absolute clutter__btm--rrectd"></div>
+                    <div class="u-absolute clutter__btm--rrecte"></div>
+                </div>
+                <div class="u-absolute clutter__btm--v">
+                    <div class="u-absolute clutter__btm--va"></div>
+                    <div class="u-absolute clutter__btm--vb"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg"></div>
+    </div>
+</body>
+
+</html>

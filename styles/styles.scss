@@ -1,0 +1,567 @@
+/* Utility Classes */
+/* Makes position absolute */
+.u-absolute {
+    position: absolute;
+}
+
+/* Base */
+
+/* Color Variables */
+$black: #000;
+$gray: #54646d;
+$red: #e74d3c;
+$white: #ecf0f1;
+
+body {
+    overflow: hidden;
+}
+
+/* Add a sleek transition to responsive elements.*/
+* {
+    transition: all 0.9s;
+}
+
+/* Background Triangle */
+.bg {
+    background: linear-gradient(0.33turn, $white 50%, $black 50%);
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* Focal Shapes */
+
+.focus {
+    &__circle {
+        background-color: $white;
+        border-radius: 50%;
+        height: 65vh;
+        left: 45vw;
+        top: 30vh;
+        width: 65vh;
+        z-index: 5;
+    }
+
+    &__triangle {
+        _border-color: $black $black $red $black;
+        _filter: progid:DXImageTransform.Microsoft.Chroma(color="#000000");
+        border-color: transparent transparent $red transparent;
+        border-style: solid;
+        border-width: 0 20vh 80vh 20vh;
+        left: 35vw;
+        line-height: 0;
+        top: 6vh;
+        transform: rotate(115deg);
+        z-index: 8;
+    }
+
+    &__square--lg {
+        background-color: $gray;
+        height: 25vh;
+        left: 48vw;
+        mix-blend-mode: multiply;
+        top: 14vh;
+        transform: rotate(60deg);
+        width: 25vh;
+        z-index: 3;
+    }
+
+    &__square--sm {
+        background-color: $gray;
+        height: 20vh;
+        left: 42vw;
+        mix-blend-mode: multiply;
+        top: 63vh;
+        width: 20vh;
+        z-index: 3;
+    }
+}
+
+/* Typography */
+
+.txt {
+    font-family: sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    z-index: 12;
+
+    &__klinom {
+        font-size: 2.5em;
+        left: 7vw;
+        top: 15vh;
+        transform: rotate(24deg);
+    }
+
+    &__krasnym {
+        -webkit-text-fill-color: $white;
+        -webkit-text-stroke-color: $black;
+        -webkit-text-stroke-width: 0.033em;
+        color: $white;
+        font-size: 2em;
+        left: 7vw;
+        top: 55vh;
+        transform: rotate(28deg);
+    }
+
+    &__bei {
+        color: $red;
+        font-size: 2.5em;
+        left: 63vw;
+        top: 77vh;
+        transform: rotate(8deg);
+    }
+
+    &__belykh {
+        -webkit-text-fill-color: $gray;
+        -webkit-text-stroke-color: $black;
+        -webkit-text-stroke-width: 1px;
+        background-color: $white;
+        color: #50545c;
+        font-size: 2em;
+        left: 80vw;
+        line-height: 0.75em;
+        padding-top: 0;
+        top: 90vh;
+        transform: rotate(3deg);
+    }
+}
+
+/* Clutter */
+/* Clutter at the Top */
+.clutter__top {
+    animation: floaty 60s infinite alternate;
+
+    &--wrecta {
+        background-color: $white;
+        height: 4vw;
+        left: 75vw;
+        top: 3vh;
+        transform: rotate(42deg);
+        width: 0.75vw;
+        z-index: 10;
+    }
+
+    &--wrectb {
+        background-color: $white;
+        height: 2.5vw;
+        left: 73vw;
+        top: 1.5vh;
+        transform: rotate(25deg);
+        width: 0.4vw;
+        z-index: 10;
+    }
+
+    &--wrectc {
+        background-color: $white;
+        height: 1.5vw;
+        left: 79vw;
+        top: 3vh;
+        transform: rotate(48deg);
+        width: 0.4vw;
+        z-index: 10;
+    }
+
+    &--wrectd {
+        background-color: $white;
+        height: 0.6vw;
+        left: 79vw;
+        top: 12vh;
+        width: 5vw;
+        z-index: 10;
+    }
+
+    &--wrecte {
+        background-color: $white;
+        height: 0.4vw;
+        left: 83vw;
+        top: 14vh;
+        transform: rotate(170deg);
+        width: 2vw;
+        z-index: 10;
+    }
+
+    &--wrectf {
+        background-color: $white;
+        height: 0.4vw;
+        left: 85.5vw;
+        top: 15.5vh;
+        transform: rotate(10deg);
+        width: 2.25vw;
+        z-index: 10;
+    }
+
+    &--cross-bar {
+        background-color: $white;
+        height: 0.5vh;
+        left: 65vw;
+        top: 9vh;
+        width: 5vw;
+        z-index: 10;
+    }
+
+    &--cross-lft {
+        background-color: $red;
+        filter: drop-shadow(0 0.25vw $white);
+        height: 2.5vh;
+        left: 66vw;
+        top: 8.25vh;
+        width: 0.25vw;
+        z-index: 10;
+    }
+
+    &--cross-mid {
+        background-color: $gray;
+        height: 2.5vh;
+        left: 67vw;
+        top: 8.25vh;
+        width: 0.5vw;
+        z-index: 10;
+    }
+
+    &--cross-rgt {
+        background-color: $red;
+        filter: drop-shadow(0 0.25vw $white);
+        height: 4vh;
+        left: 67.5vw;
+        top: 7.25vh;
+        width: 0.5vw;
+        z-index: 10;
+    }
+
+    &--slant-red {
+        background-color: $red;
+        height: 15vh;
+        left: 66.5vw;
+        top: 9.5vh;
+        transform: rotate(65deg);
+        width: 0.25vw;
+        z-index: 10;
+    }
+
+    &--slant-white {
+        background-color: $white;
+        height: 15vh;
+        left: 66.5vw;
+        top: 10vh;
+        transform: rotate(65deg);
+        width: 0.4vw;
+        z-index: 10;
+    }
+
+    &--slant-gray {
+        background-color: $gray;
+        height: 15vh;
+        left: 66.75vw;
+        top: 10.5vh;
+        transform: rotate(65deg);
+        width: 0.3vw;
+        z-index: 10;
+    }
+}
+
+/* Clutter in the Middle */
+
+.clutter__mid {
+    &--wcir {
+        background-color: $white;
+        border-radius: 50%;
+        height: 2.5vh;
+        left: 83vw;
+        top: 30vh;
+        width: 2.5vh;
+        z-index: 5;
+    }
+
+    &--rtgla {
+        _border-color: $black $black $red $black;
+        _filter: progid:DXImageTransform.Microsoft.Chroma(color="#$black");
+        border-color: transparent transparent $red transparent;
+        border-style: solid;
+        border-width: 12vh 12vh 5vh 0;
+        filter: drop-shadow(0.5vw 0.5vw $white);
+        left: 69vw;
+        line-height: 0;
+        top: 25vh;
+        transform: rotate(335deg);
+        z-index: 6;
+    }
+
+    &--rtglb {
+        _border-color: $black $black $red $black;
+        _filter: progid:DXImageTransform.Microsoft.Chroma(color="#$black");
+        border-color: transparent transparent $red transparent;
+        border-style: solid;
+        border-width: 15vh 15vh 2.5vh 0;
+        filter: drop-shadow(0.25vw 0.25vw $white);
+        left: 53vw;
+        line-height: 0;
+        mix-blend-mode: multiply;
+        top: 18vh;
+        z-index: 6;
+    }
+
+    &--brect {
+        background-color: $black;
+        height: 0.75vh;
+        left: 57vw;
+        top: 35.75vh;
+        width: 13vh;
+        z-index: 7;
+    }
+}
+
+/* Clutter at the Bottom */
+.clutter__btm {
+    &--wrecta {
+        background-color: $white;
+        height: 2vw;
+        left: 43vw;
+        top: 92vh;
+        transform: rotate(340deg);
+        width: 0.4vw;
+        z-index: 10;
+    }
+
+    &--wrectb {
+        background-color: $white;
+        height: 2.7vw;
+        left: 41.5vw;
+        top: 92vh;
+        transform: rotate(330deg);
+        width: 0.5vw;
+        z-index: 10;
+    }
+
+    &--rtgl {
+        animation: floaty 60s infinite alternate;
+        _border-color: $black $black $red $black;
+        _filter: progid:DXImageTransform.Microsoft.Chroma(color="#$black");
+        border-color: transparent transparent $red transparent;
+        border-style: solid;
+        border-width: 0 12vh 2vh 2vh;
+        filter: drop-shadow(0.25vw 0.25vw $white);
+        left: 40vw;
+        line-height: 0;
+        top: 70vh;
+        transform: rotate(350deg);
+        z-index: 6;
+    }
+
+    &--btgl {
+        animation: floaty 60s infinite alternate;
+        _border-color: $black $black $black $black;
+        _filter: progid:DXImageTransform.Microsoft.Chroma(color="#$black");
+        border-color: transparent transparent $black transparent;
+        border-style: solid;
+        border-width: 0 15vh 1vh 1vh;
+        left: 39vw;
+        line-height: 0;
+        top: 70.5vh;
+        z-index: 6;
+    }
+
+    &--rrecta {
+        animation: floaty 60s infinite alternate;
+        background-color: $red;
+        filter: drop-shadow(0.25vw 0.25vw $white);
+        height: 1vh;
+        left: 20vw;
+        top: 78vh;
+        width: 10vw;
+        z-index: 4;
+    }
+
+    &--wbrecta {
+        animation: floaty 60s infinite alternate;
+        background-color: $white;
+        border: solid black 0.1vh;
+        height: 1vh;
+        left: 20vw;
+        top: 79vh;
+        width: 10vw;
+        z-index: 3;
+    }
+
+    &--rrectb {
+        animation: floaty 60s infinite alternate;
+        background-color: $red;
+        height: 10vh;
+        left: 28vw;
+        top: 82vh;
+        width: 2vw;
+        z-index: 3;
+    }
+
+    &--rrectc {
+        animation: floaty 60s infinite alternate;
+        background-color: $red;
+        height: 1vh;
+        left: 31vw;
+        top: 83.5vh;
+        width: 2vw;
+        z-index: 3;
+    }
+
+    &--rrectd {
+        animation: floaty 60s infinite alternate;
+        background-color: $red;
+        height: 0.8vh;
+        left: 31vw;
+        top: 86vh;
+        width: 2vw;
+        z-index: 3;
+    }
+
+    &--rrecte {
+        animation: floaty 60s infinite alternate;
+        background-color: $red;
+        height: 1vh;
+        left: 31vw;
+        top: 89vh;
+        width: 2vw;
+        z-index: 3;
+    }
+}
+
+.clutter__btm--v {
+
+    &a {
+        background: $white;
+        border-width: 0.25vh 0.25vh 0 0;
+        border: 0.25vh solid $black;
+        height: 2vh;
+        left: 0.5vw;
+        top: 99vh;
+        transform: rotate(-45deg);
+        width: 2vh;
+    }
+
+    &b {
+        background: $white;
+        border-width: 0.25vh 0.25vh 0 0;
+        border: 0.25vh solid $black;
+        height: 2vh;
+        left: 2.5vw;
+        top: 99vh;
+        transform: rotate(-45deg);
+        width: 2vh;
+    }
+
+}
+
+/* Responsiveness Media Queries*/
+
+@media (max-width: 700px) {
+
+    /*Moves typoraphy for easier reading.*/
+    .txt {
+        &__belykh {
+            left: 30vw;
+        }
+
+        &__klinom {
+            top: 25vh;
+        }
+
+        &__krasnym {
+            top: 56vh;
+        }
+    }
+
+    /*Hides extra clutter for a more polished view at this breakpoint.*/
+    .clutter__mid {
+        &--rtgla {
+            opacity: 0;
+        }
+
+        &--rtglb {
+            opacity: 0;
+        }
+
+        &--brect {
+            opacity: 0;
+        }
+
+        &--wcir {
+            opacity: 0;
+        }
+
+    }
+
+    .clutter__btm {
+        &--rrectb {
+            opacity: 0;
+        }
+
+        &--rrectc {
+            opacity: 0;
+        }
+
+        &--rrectd {
+            opacity: 0;
+        }
+
+        &--rrecte {
+            opacity: 0;
+        }
+
+        &--va {
+            opacity: 0;
+        }
+
+        &--vb {
+            opacity: 0;
+        }
+    }
+}
+
+/* Floating animation for some elements.
+I will apply this sparingly, because keyframes tend to break blending modes and rotation.
+Therefore, not all elements will be animated, only those that do not also have blending modes or rotation.
+I am using pixels and not viewport units, because I want to have constant values for the translations.*/
+
+@keyframes floaty {
+    0% {
+        transform: translate(1px, 1px) rotate(0);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}

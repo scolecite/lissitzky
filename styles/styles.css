@@ -1,0 +1,609 @@
+/* Utility Classes */
+/* Makes position absolute */
+.u-absolute {
+  position: absolute;
+}
+
+/* Base */
+/* Color Variables */
+body {
+  overflow: hidden;
+}
+
+/* Add a sleek transition to responsive elements.*/
+* {
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+/* Background Triangle */
+.bg {
+  background: linear-gradient(0.33turn, #ecf0f1 50%, #000 50%);
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Focal Shapes */
+.focus__circle {
+  background-color: #ecf0f1;
+  border-radius: 50%;
+  height: 65vh;
+  left: 45vw;
+  top: 30vh;
+  width: 65vh;
+  z-index: 5;
+}
+
+.focus__triangle {
+  _border-color: #000 #000 #e74d3c #000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color="#000000");
+  border-color: transparent transparent #e74d3c transparent;
+  border-style: solid;
+  border-width: 0 20vh 80vh 20vh;
+  left: 35vw;
+  line-height: 0;
+  top: 6vh;
+  -webkit-transform: rotate(115deg);
+          transform: rotate(115deg);
+  z-index: 8;
+}
+
+.focus__square--lg {
+  background-color: #54646d;
+  height: 25vh;
+  left: 48vw;
+  mix-blend-mode: multiply;
+  top: 14vh;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  width: 25vh;
+  z-index: 3;
+}
+
+.focus__square--sm {
+  background-color: #54646d;
+  height: 20vh;
+  left: 42vw;
+  mix-blend-mode: multiply;
+  top: 63vh;
+  width: 20vh;
+  z-index: 3;
+}
+
+/* Typography */
+.txt {
+  font-family: sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  z-index: 12;
+}
+
+.txt__klinom {
+  font-size: 2.5em;
+  left: 7vw;
+  top: 15vh;
+  -webkit-transform: rotate(24deg);
+          transform: rotate(24deg);
+}
+
+.txt__krasnym {
+  -webkit-text-fill-color: #ecf0f1;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 0.033em;
+  color: #ecf0f1;
+  font-size: 2em;
+  left: 7vw;
+  top: 55vh;
+  -webkit-transform: rotate(28deg);
+          transform: rotate(28deg);
+}
+
+.txt__bei {
+  color: #e74d3c;
+  font-size: 2.5em;
+  left: 63vw;
+  top: 77vh;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+}
+
+.txt__belykh {
+  -webkit-text-fill-color: #54646d;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  background-color: #ecf0f1;
+  color: #50545c;
+  font-size: 2em;
+  left: 80vw;
+  line-height: 0.75em;
+  padding-top: 0;
+  top: 90vh;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+/* Clutter */
+/* Clutter at the Top */
+.clutter__top {
+  -webkit-animation: floaty 60s infinite alternate;
+          animation: floaty 60s infinite alternate;
+}
+
+.clutter__top--wrecta {
+  background-color: #ecf0f1;
+  height: 4vw;
+  left: 75vw;
+  top: 3vh;
+  -webkit-transform: rotate(42deg);
+          transform: rotate(42deg);
+  width: 0.75vw;
+  z-index: 10;
+}
+
+.clutter__top--wrectb {
+  background-color: #ecf0f1;
+  height: 2.5vw;
+  left: 73vw;
+  top: 1.5vh;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  width: 0.4vw;
+  z-index: 10;
+}
+
+.clutter__top--wrectc {
+  background-color: #ecf0f1;
+  height: 1.5vw;
+  left: 79vw;
+  top: 3vh;
+  -webkit-transform: rotate(48deg);
+          transform: rotate(48deg);
+  width: 0.4vw;
+  z-index: 10;
+}
+
+.clutter__top--wrectd {
+  background-color: #ecf0f1;
+  height: 0.6vw;
+  left: 79vw;
+  top: 12vh;
+  width: 5vw;
+  z-index: 10;
+}
+
+.clutter__top--wrecte {
+  background-color: #ecf0f1;
+  height: 0.4vw;
+  left: 83vw;
+  top: 14vh;
+  -webkit-transform: rotate(170deg);
+          transform: rotate(170deg);
+  width: 2vw;
+  z-index: 10;
+}
+
+.clutter__top--wrectf {
+  background-color: #ecf0f1;
+  height: 0.4vw;
+  left: 85.5vw;
+  top: 15.5vh;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  width: 2.25vw;
+  z-index: 10;
+}
+
+.clutter__top--cross-bar {
+  background-color: #ecf0f1;
+  height: 0.5vh;
+  left: 65vw;
+  top: 9vh;
+  width: 5vw;
+  z-index: 10;
+}
+
+.clutter__top--cross-lft {
+  background-color: #e74d3c;
+  -webkit-filter: drop-shadow(0 0.25vw #ecf0f1);
+          filter: drop-shadow(0 0.25vw #ecf0f1);
+  height: 2.5vh;
+  left: 66vw;
+  top: 8.25vh;
+  width: 0.25vw;
+  z-index: 10;
+}
+
+.clutter__top--cross-mid {
+  background-color: #54646d;
+  height: 2.5vh;
+  left: 67vw;
+  top: 8.25vh;
+  width: 0.5vw;
+  z-index: 10;
+}
+
+.clutter__top--cross-rgt {
+  background-color: #e74d3c;
+  -webkit-filter: drop-shadow(0 0.25vw #ecf0f1);
+          filter: drop-shadow(0 0.25vw #ecf0f1);
+  height: 4vh;
+  left: 67.5vw;
+  top: 7.25vh;
+  width: 0.5vw;
+  z-index: 10;
+}
+
+.clutter__top--slant-red {
+  background-color: #e74d3c;
+  height: 15vh;
+  left: 66.5vw;
+  top: 9.5vh;
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
+  width: 0.25vw;
+  z-index: 10;
+}
+
+.clutter__top--slant-white {
+  background-color: #ecf0f1;
+  height: 15vh;
+  left: 66.5vw;
+  top: 10vh;
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
+  width: 0.4vw;
+  z-index: 10;
+}
+
+.clutter__top--slant-gray {
+  background-color: #54646d;
+  height: 15vh;
+  left: 66.75vw;
+  top: 10.5vh;
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
+  width: 0.3vw;
+  z-index: 10;
+}
+
+/* Clutter in the Middle */
+.clutter__mid--wcir {
+  background-color: #ecf0f1;
+  border-radius: 50%;
+  height: 2.5vh;
+  left: 83vw;
+  top: 30vh;
+  width: 2.5vh;
+  z-index: 5;
+}
+
+.clutter__mid--rtgla {
+  _border-color: #000 #000 #e74d3c #000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color="#$black");
+  border-color: transparent transparent #e74d3c transparent;
+  border-style: solid;
+  border-width: 12vh 12vh 5vh 0;
+  -webkit-filter: drop-shadow(0.5vw 0.5vw #ecf0f1);
+          filter: drop-shadow(0.5vw 0.5vw #ecf0f1);
+  left: 69vw;
+  line-height: 0;
+  top: 25vh;
+  -webkit-transform: rotate(335deg);
+          transform: rotate(335deg);
+  z-index: 6;
+}
+
+.clutter__mid--rtglb {
+  _border-color: #000 #000 #e74d3c #000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color="#$black");
+  border-color: transparent transparent #e74d3c transparent;
+  border-style: solid;
+  border-width: 15vh 15vh 2.5vh 0;
+  -webkit-filter: drop-shadow(0.25vw 0.25vw #ecf0f1);
+          filter: drop-shadow(0.25vw 0.25vw #ecf0f1);
+  left: 53vw;
+  line-height: 0;
+  mix-blend-mode: multiply;
+  top: 18vh;
+  z-index: 6;
+}
+
+.clutter__mid--brect {
+  background-color: #000;
+  height: 0.75vh;
+  left: 57vw;
+  top: 35.75vh;
+  width: 13vh;
+  z-index: 7;
+}
+
+/* Clutter at the Bottom */
+.clutter__btm--wrecta {
+  background-color: #ecf0f1;
+  height: 2vw;
+  left: 43vw;
+  top: 92vh;
+  -webkit-transform: rotate(340deg);
+          transform: rotate(340deg);
+  width: 0.4vw;
+  z-index: 10;
+}
+
+.clutter__btm--wrectb {
+  background-color: #ecf0f1;
+  height: 2.7vw;
+  left: 41.5vw;
+  top: 92vh;
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
+  width: 0.5vw;
+  z-index: 10;
+}
+
+.clutter__btm--rtgl {
+  -webkit-animation: floaty 60s infinite alternate;
+          animation: floaty 60s infinite alternate;
+  _border-color: #000 #000 #e74d3c #000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color="#$black");
+  border-color: transparent transparent #e74d3c transparent;
+  border-style: solid;
+  border-width: 0 12vh 2vh 2vh;
+  -webkit-filter: drop-shadow(0.25vw 0.25vw #ecf0f1);
+          filter: drop-shadow(0.25vw 0.25vw #ecf0f1);
+  left: 40vw;
+  line-height: 0;
+  top: 70vh;
+  -webkit-transform: rotate(350deg);
+          transform: rotate(350deg);
+  z-index: 6;
+}
+
+.clutter__btm--btgl {
+  -webkit-animation: floaty 60s infinite alternate;
+          animation: floaty 60s infinite alternate;
+  _border-color: #000 #000 #000 #000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color="#$black");
+  border-color: transparent transparent #000 transparent;
+  border-style: solid;
+  border-width: 0 15vh 1vh 1vh;
+  left: 39vw;
+  line-height: 0;
+  top: 70.5vh;
+  z-index: 6;
+}
+
+.clutter__btm--rrecta {
+  -webkit-animation: floaty 60s infinite alternate;
+          animation: floaty 60s infinite alternate;
+  background-color: #e74d3c;
+  -webkit-filter: drop-shadow(0.25vw 0.25vw #ecf0f1);
+          filter: drop-shadow(0.25vw 0.25vw #ecf0f1);
+  height: 1vh;
+  left: 20vw;
+  top: 78vh;
+  width: 10vw;
+  z-index: 4;
+}
+
+.clutter__btm--wbrecta {
+  -webkit-animation: floaty 60s infinite alternate;
+          animation: floaty 60s infinite alternate;
+  background-color: #ecf0f1;
+  border: solid black 0.1vh;
+  height: 1vh;
+  left: 20vw;
+  top: 79vh;
+  width: 10vw;
+  z-index: 3;
+}
+
+.clutter__btm--rrectb {
+  -webkit-animation: floaty 60s infinite alternate;
+          animation: floaty 60s infinite alternate;
+  background-color: #e74d3c;
+  height: 10vh;
+  left: 28vw;
+  top: 82vh;
+  width: 2vw;
+  z-index: 3;
+}
+
+.clutter__btm--rrectc {
+  -webkit-animation: floaty 60s infinite alternate;
+          animation: floaty 60s infinite alternate;
+  background-color: #e74d3c;
+  height: 1vh;
+  left: 31vw;
+  top: 83.5vh;
+  width: 2vw;
+  z-index: 3;
+}
+
+.clutter__btm--rrectd {
+  -webkit-animation: floaty 60s infinite alternate;
+          animation: floaty 60s infinite alternate;
+  background-color: #e74d3c;
+  height: 0.8vh;
+  left: 31vw;
+  top: 86vh;
+  width: 2vw;
+  z-index: 3;
+}
+
+.clutter__btm--rrecte {
+  -webkit-animation: floaty 60s infinite alternate;
+          animation: floaty 60s infinite alternate;
+  background-color: #e74d3c;
+  height: 1vh;
+  left: 31vw;
+  top: 89vh;
+  width: 2vw;
+  z-index: 3;
+}
+
+.clutter__btm--va {
+  background: #ecf0f1;
+  border-width: 0.25vh 0.25vh 0 0;
+  border: 0.25vh solid #000;
+  height: 2vh;
+  left: 0.5vw;
+  top: 99vh;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 2vh;
+}
+
+.clutter__btm--vb {
+  background: #ecf0f1;
+  border-width: 0.25vh 0.25vh 0 0;
+  border: 0.25vh solid #000;
+  height: 2vh;
+  left: 2.5vw;
+  top: 99vh;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 2vh;
+}
+
+/* Responsiveness Media Queries*/
+@media (max-width: 700px) {
+  /*Moves typoraphy for easier reading.*/
+  .txt__belykh {
+    left: 30vw;
+  }
+  .txt__klinom {
+    top: 25vh;
+  }
+  .txt__krasnym {
+    top: 56vh;
+  }
+  /*Hides extra clutter for a more polished view at this breakpoint.*/
+  .clutter__mid--rtgla {
+    opacity: 0;
+  }
+  .clutter__mid--rtglb {
+    opacity: 0;
+  }
+  .clutter__mid--brect {
+    opacity: 0;
+  }
+  .clutter__mid--wcir {
+    opacity: 0;
+  }
+  .clutter__btm--rrectb {
+    opacity: 0;
+  }
+  .clutter__btm--rrectc {
+    opacity: 0;
+  }
+  .clutter__btm--rrectd {
+    opacity: 0;
+  }
+  .clutter__btm--rrecte {
+    opacity: 0;
+  }
+  .clutter__btm--va {
+    opacity: 0;
+  }
+  .clutter__btm--vb {
+    opacity: 0;
+  }
+}
+
+/* Floating animation for some elements.
+I will apply this sparingly, because keyframes tend to break blending modes and rotation.
+Therefore, not all elements will be animated, only those that do not also have blending modes or rotation.
+I am using pixels and not viewport units, because I want to have constant values for the translations.*/
+@-webkit-keyframes floaty {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0);
+            transform: translate(1px, 1px) rotate(0);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0);
+            transform: translate(-3px, 1px) rotate(0);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0);
+            transform: translate(1px, 2px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes floaty {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0);
+            transform: translate(1px, 1px) rotate(0);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0);
+            transform: translate(-3px, 1px) rotate(0);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0);
+            transform: translate(1px, 2px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
